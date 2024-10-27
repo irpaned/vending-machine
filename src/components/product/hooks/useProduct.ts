@@ -9,7 +9,6 @@ export function useProduct() {
       try {
         const response = await fetch("http://localhost:3000/products");
         const data = await response.json();
-        console.log(data);
         setItems(data);
       } catch (error) {
         console.error(error);
