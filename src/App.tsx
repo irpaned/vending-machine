@@ -41,7 +41,7 @@ function App() {
           </div>
           <div
             style={{ backgroundColor: "green" }}
-            className="flex flex-col w-[35%] h-[72%] rounded p-2 "
+            className="flex flex-col w-[35%] h-[72%] rounded p-2"
           >
             <Machine />
           </div>

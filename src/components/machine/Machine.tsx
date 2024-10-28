@@ -12,8 +12,8 @@ export function Machine() {
 
   const moneySchema = z.enum(["2000", "5000", "10000", "20000", "50000"]);
 
-  const [totalMoney, setTotalMoney] = useState(0);
   const [inputMoney, setInputMoney] = useState("");
+  const [totalMoney, setTotalMoney] = useState(0);
   const [selectedPrice, setSelectedPrice] = useState<number | null>(null);
   const [showChange, setShowChange] = useState(false);
   const [isValidMoney, setIsValidMoney] = useState(false);
@@ -38,6 +38,8 @@ export function Machine() {
         setTotalMoney((prevTotal) => prevTotal + parsedValue);
         setInputMoney("");
       }, 2000);
+
+      console.log("newTimeoutId", newTimeoutId);
 
       setTimeoutId(newTimeoutId);
     } else {
