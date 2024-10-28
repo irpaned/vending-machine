@@ -5,7 +5,7 @@
 Installation :
 
 1. Clone the repository:
-   git clone https://github.com/irpaned/vending-machine.git
+   git clone https://github.com/irpaned/vending-machine.git and
    cd vending-machine
 
 2. Install dependencies:
